@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misión de Rescate - Protocolo A.U.R.O.R.A.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <h1><span class="book-icon">💻</span> <strong>Misión de Rescate - Protocolo A.U.R.O.R.A.</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">👁️</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está diseñada para fomentar el pensamiento crítico y la depuración a nivel profesional.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para la auditoría de código crítico.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Auditoría de Código Crítico</h2>
+                <p class="overview-subtitle">Resumen de objetivos, materiales y preparación para el Ingeniero Jefe.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Identificar y corregir errores de lógica sutiles en código sintácticamente válido.</li>
+                                        <li>Diferenciar y aplicar correctamente los operadores de asignación (=) y comparación (==, ===).</li>
+                                        <li>Analizar el impacto de los comentarios (//) en la ejecución del código y detectar funcionalidades desactivadas.</li>
+                                        <li>Fomentar prácticas de 'pair programming' para una revisión de código efectiva.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">Briefing de Emergencia</strong></li>
+                                        <li><strong class="tactic-highlight">Simulación de Errores Lógicos</strong></li>
+                                        <li><strong class="tactic-highlight">Auditoría de Código</strong></li>
+                                        <li><strong class="tactic-highlight">Revisión de Pares</strong></li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Validación y corrección de los módulos lógicos de A.U.R.O.R.A., restaurando la intención original del código y documentando los hallazgos críticos.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Presentación de diapositivas (5 diapositivas).</li>
+                                        <li>Entorno de Desarrollo Integrado (IDE) o plataforma de codificación avanzada.</li>
+                                        <li>Dispositivos (computadoras) con acceso al entorno de desarrollo.</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Configuración del Entorno:</strong>
+                                            <ul>
+                                                <li>Asegurar que el IDE y los archivos de la misión estén accesibles para todos los estudiantes.</li>
+                                                <li>Verificar que el código de la misión contenga los errores lógicos planeados.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Revisar a fondo los ejemplos de errores lógicos (= vs ==, comentarios) para poder explicarlos con precisión técnica.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Briefing de Emergencia - Intro y Contexto ⏰ 5 minutos</h2>
+                <p>Presentar el desafío como un problema de lógica, no de sintaxis, para establecer un marco de pensamiento avanzado.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Convocatoria de Ingenieros Senior ⏰ 2 minutos</h3>
+                            <p>Establecer un tono profesional y directo, reconociendo la competencia de los estudiantes.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Buenas tardes, equipo. Gracias por responder a esta convocatoria de emergencia. Todos en esta sala conocen el protocolo: escribimos código que opera hardware a 200 millones de kilómetros de distancia. El margen de error es cero. Hoy, nos enfrentamos a un problema que va más allá de la simple sintaxis.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Análisis Forense del Fallo de A.U.R.O.R.A. ⏰ 3 minutos</h3>
+                            <p>Proyecta Diapositiva 1. Explicar que el código es sintácticamente válido pero lógicamente defectuoso, usando una analogía clara.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Los equipos de niveles inferiores han limpiado los errores superficiales. Sin embargo, el rover sigue sin ser funcional. Los diagnósticos indican que el sistema es sintácticamente válido, pero lógicamente defectuoso.<br><br>Imaginen una receta donde en lugar de decir 'compara la temperatura con 180°', dice 'asigna 180° a la temperatura'. La frase es correcta, pero la acción es desastrosa. Su misión es una auditoría de protocolos lógicos. No buscarán errores obvios, sino código que es técnicamente correcto pero hace lo incorrecto. ¿Listos para la inmersión profunda?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: Simulación de Errores Lógicos - Brain Gym ⏰ 10 minutos</h2>
+                <p>Enseñar los conceptos técnicos clave de los errores de lógica que los estudiantes deberán encontrar.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: El Paradigma del "Bug" Sutil ⏰ 2 minutos</h3>
+                            <p>Proyecta Diapositiva 2. Introducir la idea de que los errores más peligrosos no son los que detienen el programa, sino los que lo hacen funcionar incorrectamente.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Bien. Antes de entrar al código, vamos a analizar dos de los tipos de 'bugs' lógicos más infames. Estos no los marca un compilador como errores, lo que los hace especialmente peligrosos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Los 2 Errores Conceptuales Clave ⏰ 8 minutos</h3>
+                            <p>Proyecta Diapositiva 3. Explicar en detalle la diferencia entre asignación y comparación, y el efecto de los comentarios, con ejemplos de código claros.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant"><strong>Concepto 1: Asignación (=) vs. Comparación (==).</strong> Un solo igual ASIGNA. Doble igual COMPARA. La línea <code>if (bateria = nivelCritico)</code> no compara, asigna un nuevo valor a 'bateria' y la condición casi siempre será verdadera. Este es un error catastrófico.<br><br><strong>Concepto 2: El Comentario Asesino (//).</strong> Un <code>//</code> al inicio de una línea la hace invisible para el compilador. La corrupción de datos pudo haber desactivado una función vital, como <code>// activarPanelesSolares();</code>. El código está ahí, pero no se ejecuta.<br><br>Su objetivo no es solo ver el código, sino pensar como el compilador. Pregúntense: ¿Cuál es la intención y cuál es la acción real? No confíen en nada.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: Auditoría de Código - El Challenge ⏰ 15 minutos</h2>
+                <p>Los estudiantes aplican el análisis lógico en una sesión de 'pair programming' para auditar el código.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Formación de Equipos de Auditoría ⏰ 3 minutos</h3>
+                            <p>Proyecta Diapositiva 4. Organizar a los estudiantes en parejas con roles definidos (piloto/navegante) y presentar las herramientas del IDE.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Esta auditoría requiere de 'pair programming'. Un ingeniero 'pilota' (escribe) y el otro 'navega' (observa y sugiere). Formen sus equipos. Su IDE tiene un explorador de archivos, resaltado de sintaxis y una consola de salida. Usen todas las herramientas a su disposición. Su objetivo es la validación lógica de 6 módulos críticos. Inicien auditoría.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Depuración Profunda ⏰ 12 minutos</h3>
+                            <p>Facilitar la sesión de auditoría, guiando a los equipos con preguntas socráticas para que descubran los errores por sí mismos. La Diapositiva 4 puede permanecer proyectada.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant"><em>(Sugerencias para el Ingeniero Jefe mientras supervisa)</em><br><br>"Equipo A, ¿cuál es el valor booleano de una declaración de asignación en una condición 'if' en este lenguaje? Investíguenlo. Eso les dará la respuesta."<br><br>"Equipo B, han encontrado una línea comentada. ¿Cuál es el impacto funcional si esa línea no se ejecuta? ¿Rompe la lógica del programa?"<br><br>"Equipo C, observen ese bucle. ¿Qué sucede en la última iteración si usan '<=' en lugar de '<' con el tamaño del array? Piensen en el índice."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                <h2>⚡ Actividad 4: Revisión de Pares - Think-Pair-Share ⏰ 5 minutos</h2>
+                <p>Consolidar el aprendizaje a través de una revisión de código en grupo y la formulación de buenas prácticas.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Fusión de Equipos de Auditoría ⏰ 1 minuto</h3>
+                            <p>Agrupar las parejas en "comités de revisión de código" para discutir sus hallazgos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Pausa. Equipos de auditoría, únanse con el equipo más cercano. Formen un comité de revisión de código de cuatro personas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Puesta en Común de Hallazgos Críticos ⏰ 4 minutos</h3>
+                            <p>Proyecta Diapositiva 5. Facilitar una discusión sobre el error más peligroso encontrado y las recomendaciones para evitarlo en el futuro.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Comités, su tarea es discutir el hallazgo más crítico. Respondan:<br>1. ¿Cuál fue el bug lógico más sutil y peligroso que encontraron? ¿Por qué era tan peligroso?<br>2. Basado en su análisis, ¿qué recomendación de 'buenas prácticas' harían para evitar este tipo de errores en el futuro?<br><br><em>(Tras la discusión)</em><br><br>¡Tiempo! Han demostrado una capacidad de análisis que va más allá de la sintaxis. Han restaurado la lógica del sistema. Excelente trabajo, ingenieros. Fin de la sesión.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
